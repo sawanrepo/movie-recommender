@@ -45,12 +45,7 @@ document.addEventListener('click', function (e) {
 });
 
 
-dropdownList.addEventListener('click', function (e) {
-    if (e.target && e.target.matches('div')) {
-        input.value = e.target.textContent;
-        dropdownList.style.display = 'none';
-    }
-});
+
 
 
 document.querySelector('form').addEventListener('submit', function (e) {
