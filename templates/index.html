@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searchable Dropdown</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="dropdown">
+        <form method="POST">
+            <input type="text" id="dropdown-input" name="movie" placeholder="Type to search..." autocomplete="off">
+            <div id="dropdown-list">
+                {% for movie in movies %}
+                    <div data-value="{{ movie }}">{{ movie }}</div>
+                {% endfor %}
+            </div>
+            <button type="submit">Recommend movies</button>
+        </form>
+    </div>
+    <p>movie selected :- {{selected_movie}}</p>
+    <p>Recommended based on selected movies:-</p>
+    {% for i in recm %}
+        <li>{{ i }}</li>
+    {% endfor %}
+
+    <!-- Modal for invalid selection -->
+    <div id="invalid-selection-modal" class="modal">
+        <div class="modal-content">
+            <p> Please select a valid movie from the dropdown list!</p>
+            <button class="close" id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
