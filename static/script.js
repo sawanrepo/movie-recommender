@@ -44,10 +44,7 @@ document.addEventListener('click', function (e) {
     }
 });
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 88adf5afd3159168364bea1c1c1ef48db96460a0
 dropdownList.addEventListener('click', function (e) {
     if (e.target && e.target.matches('div')) {
         input.value = e.target.textContent;
@@ -66,11 +63,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
         }
     });
 
-<<<<<<< HEAD
-    
-=======
-   
->>>>>>> 88adf5afd3159168364bea1c1c1ef48db96460a0
+
     if (!validSelection) {
         e.preventDefault();  
         modal.style.display = 'flex'; 
