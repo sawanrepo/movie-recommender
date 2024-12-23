@@ -12,6 +12,7 @@ This is a simple movie recommendation system that suggests movies based on user 
 ## Deployment  
 The project is deployed on **Render** and can be accessed at:  
 https://movie-recommender-v3bx.onrender.com  
+since it deployed on free plan it may take little more time to connect(even a miniute) as if server gets no request then instance get spin down.
 
 ## Tech Stack  
 - **Python**  
