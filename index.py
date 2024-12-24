@@ -5,7 +5,7 @@ import bz2
 
 app = Flask(__name__)
 
-# Load the DataFrame from the .pkl file
+
 df = pd.read_pickle("movies1.pkl")
 movie = df['title'].tolist()
 df1 = pd.read_pickle("movieshn.pkl")
@@ -13,7 +13,7 @@ movie_hn = df1['title_y'].tolist()
 movie_hn =["Krrish(hn)" if i == "Krrish" else i for i in movie_hn]#found krrish is both en and hn movie name while texting webpage so made change in data on runtime.plz ignore
 movie_en = movie
 movie = movie + movie_hn
-# Load the compressed similarity.pkl.bz2 file
+
 with bz2.BZ2File('similaritiy.pkl.bz2', 'rb') as f:
     similarity = pickle.load(f)
 similarityhn = pickle.load(open("similarityhn.pkl", "rb"))
