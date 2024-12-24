@@ -1,25 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    width: 50%;
+    margin: 20px auto;
+}
 
 #dropdown-input {
-    width: 300px;
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 10px;
 }
-
 
 #dropdown-list {
-    display: none;
-    width: 300px;
-    max-height: 200px;
-    overflow-y: auto; 
-    border: 1px solid #ccc;
-    border-top: none; 
-    background-color: white;
     position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    display: none;
     z-index: 1000;
 }
-
 
 #dropdown-list div {
     padding: 10px;
