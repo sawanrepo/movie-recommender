@@ -5,7 +5,7 @@ This is a simple movie recommendation system that suggests movies based on user 
 
 ## Features  
 - Recommend movies based on a selected title.  
-- Contains data for **4,800 movies** for accurate suggestions.  
+- Contains data for **(4,800en + 3400hn) movies** for accurate suggestions.  
 - User-friendly web interface to select a movie and view recommendations.  
 - Deployed on **Render** for public access.  
 
@@ -22,7 +22,7 @@ since it deployed on free plan it may take little more time to connect(even a mi
 - **Render** (for deployment)  
 
 ## How It Works  
-1. The system loads a dataset containing 4,800 movies.  
+1. The system loads a dataset containing 4,800 English + 3400 Hindi movies.  
 2. When a user selects a movie from the dropdown, the system calculates similarity scores using precomputed models.  
 3. The top 10 similar movies are recommended to the user.  
 
