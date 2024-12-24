@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <div class="scrolling-text">
+        <h1 style="color:red">Select a movie from list to get recommendation based on that.</h1>
+        <p>currently we have data of around 4800 English movie + 3400 hindi movie.More data will be added soon.</p>
+    </div>
     <div class="dropdown">
         <form method="POST">
             <input type="text" id="dropdown-input" name="movie" placeholder="Type to search..." autocomplete="off">
@@ -31,9 +35,7 @@
             <button class="close" id="close-modal">Close</button>
         </div>
     </div>
-    <div class="scrolling-text">
-        <p>currently we have data of around 4800 English movie + 3400 hindi movie.More data will be added soon.</p>
-    </div>
+
     
 
 
